@@ -24,7 +24,7 @@ def normalized_matrix(filename):
                 attributes[i][j]=attributes[i][j]/sum_cols[j]
         return (attributes)
     except Exception as e:
-        print("Exception--->",e)
+        print(e)
 
 def weighted_matrix(attributes,weights):
     ''' To multiply each of the values in the attributes array with the corresponding weights of the particular attribute'''
@@ -40,7 +40,7 @@ def weighted_matrix(attributes,weights):
             weighted_attributes.append(temp)
         return(weighted_attributes)
     except Exception as e:
-        print("Exception--->",e)
+        print(e)
 
 def impact_matrix(weighted_attributes,impacts):
     try:
@@ -76,7 +76,7 @@ def impact_matrix(weighted_attributes,impacts):
             Performance_score[i]=Sjnegative[i]/(Sjnegative[i]+Sjpositive[i])
         return(Performance_score)
     except Exception as e:
-        print("Exception--->",e)
+        print(e)
 
 def main():
     try:
@@ -103,7 +103,7 @@ def main():
         dataset['Rank']=rank
         dataset.to_csv(sys.argv[4],index=False)   
     except Exception as e:
-        print("Exception--->",e)
+        print(e)
     
 if __name__ == '__main__':
     main()
