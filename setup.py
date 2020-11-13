@@ -7,6 +7,7 @@ setup(
   license='MIT',        
   description = 'Topsis Score and Rank generator',   
   long_description=open("README.txt").read(),
+  long_description_content_type='text/markdown',
   author = 'Tanisha Garg',                   
   author_email = 'tgarg_be18@thapar.edu',      
   url = 'https://github.com/Tanisha1508/TOPSIS-Tanisha-101803042',   
