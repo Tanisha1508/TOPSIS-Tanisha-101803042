@@ -8,8 +8,7 @@ To install the package:
 **pip install TOPSIS-Tanisha-101803042**  
 This is a package focusing on finding the topsis score and rank of a dataframe **(csv file)** with only numerical values.
 
-## Python IDLE or any Editor
-> import pandas as pd  
+## Python IDLE or any Editor   
 > import TOPSIS-Tanisha-101803042.topsis  
 > f = input_csv_filepath  
 > w = "1,1,1,1"  
