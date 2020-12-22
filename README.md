@@ -4,8 +4,8 @@ The method is based on finding an ideal and an anti-ideal solution and comparing
 TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution, and greatest distance from the negative-ideal solution.
 
 ## Package Usage
-To install the package:
-**pip install TOPSIS-Tanisha-101803042**
+To install the package:  
+**pip install TOPSIS-Tanisha-101803042**  
 This is a package focusing on finding the topsis score and rank of a dataframe **(csv file)** with only numerical values.
 
 ## Python IDLE or any Editor
