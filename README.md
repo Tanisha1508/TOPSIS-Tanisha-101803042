@@ -10,9 +10,9 @@ This is a package focusing on finding the topsis score and rank of a dataframe *
 
 ## Python IDLE or any Editor   
 > import TOPSIS-Tanisha-101803042.topsis  
-> f = input_csv_filepath  
+> f = "input_csv_filepath"  
 > w = "1,1,1,1"  
 > im = "+,+,+,-"  
-> r = result_csv_filepath  
+> r = "result_csv_filepath"  
 > TOPSIS-Tanisha-101803042.topsis(f,w,im,r)  
 The final result can be seen in the result file given as r.  
