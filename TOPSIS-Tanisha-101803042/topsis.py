@@ -1,16 +1,16 @@
+import sys
 import pandas as pd 
 import numpy as np
-import sys
 
 def normalized_matrix(filename):
     '''To normalize each of the values in the csv file'''
     try:
         dataset = pd.read_csv(filename) #loading the csv file into dataset
-        if(len(dataset.axes[1])<3):
+        if len(dataset.axes[1])<3:
             print("Number of columns should be greater than 3")
             sys.exit(1)
             
-        attributes = dataset.iloc[:,1:].values #keeping the attributes of the dataset in a different varaiable 
+        attributes = dataset.iloc[:,1:].values #keeping the attributes of the dataset in a different variable 
         #alternatives = dataset.iloc[:,0].values
         '''the attributes and alternatives are 2-D numpy arrays'''
         sum_cols=[0]*len(attributes[0]) #1-D array with size equal to the nummber of columns in the attributes array
@@ -78,16 +78,12 @@ def impact_matrix(weighted_attributes,impacts):
     except Exception as e:
         print(e)
 
-def main():
+def score(filename,weights,impacts,resultfilename):
     try:
-        arguments = sys.argv[1:]
-        if len(arguments) != 4:
-            print("Usage: python topsis.py <InputDataFile> <Weights> <Impacts> <result file name>")
-            sys.exit(1)
-        (a)=normalized_matrix(sys.argv[1])
-        c = weighted_matrix(a,sys.argv[2])
-        d = impact_matrix(c,sys.argv[3])
-        dataset = pd.read_csv(sys.argv[1])
+        a = normalized_matrix(filename)
+        c = weighted_matrix(a,weights)
+        d = impact_matrix(c,impacts)
+        dataset = pd.read_csv(filename)
         dataset['topsis score']=""
         dataset['topsis score']=d
         copi=d.copy()
@@ -101,9 +97,9 @@ def main():
                     break
         dataset['Rank']=""
         dataset['Rank']=rank
-        dataset.to_csv(sys.argv[4],index=False)   
+        dataset.to_csv(resultfilename,index=False)  
+        print(dataset[0],"--->",dataset[-1]) 
     except Exception as e:
-        print(e)
+        print(e)     
+
     
-if __name__ == '__main__':
-    main()
