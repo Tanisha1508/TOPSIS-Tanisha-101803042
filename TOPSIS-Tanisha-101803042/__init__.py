@@ -1,1 +1,2 @@
-from topsis import score
+#from topsis import rank
+__version__='1.0'

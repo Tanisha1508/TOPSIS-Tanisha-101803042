@@ -78,7 +78,7 @@ def impact_matrix(weighted_attributes,impacts):
     except Exception as e:
         print(e)
 
-def score(filename,weights,impacts,resultfilename):
+def rank(filename,weights,impacts,resultfilename):
     try:
         a = normalized_matrix(filename)
         c = weighted_matrix(a,weights)
@@ -88,17 +88,16 @@ def score(filename,weights,impacts,resultfilename):
         dataset['topsis score']=d
         copi=d.copy()
         copi.sort(reverse=True)
-        rank=[]
+        Rank=[]
         for i in range(0,len(d)):
             temp=d[i]
             for j in range(0,len(copi)):
                 if temp==copi[j]:
-                    rank.append(j+1)
+                    Rank.append(j+1)
                     break
         dataset['Rank']=""
-        dataset['Rank']=rank
+        dataset['Rank']=Rank
         dataset.to_csv(resultfilename,index=False)  
-        print(dataset[0],"--->",dataset[-1]) 
     except Exception as e:
         print(e)     
 
