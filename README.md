@@ -5,14 +5,14 @@ TOPSIS chooses the alternative of shortest Euclidean distance from the ideal sol
 
 ## Package Usage
 To install the package:  
-**pip install TOPSIS-Tanisha-101803042**  
+**pip install topsis_tanisha_101803042**  
 This is a package focusing on finding the topsis score and rank of a dataframe **(csv file)** with only numerical values.
 
 ## Python IDLE or any Editor   
-> import TOPSIS-Tanisha-101803042.topsis  
+> import topsis_tanisha_101803042.topsis  
 > f = "input_csv_filepath"  
 > w = "1,1,1,1"  
 > im = "+,+,+,-"  
 > r = "result_csv_filepath"  
-> TOPSIS-Tanisha-101803042.topsis(f,w,im,r)  
+> topsis_tanisha_101803042.topsis.rank(f,w,im,r)  
 The final result can be seen in the result file given as r.  

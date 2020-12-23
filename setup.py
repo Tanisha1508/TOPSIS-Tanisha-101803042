@@ -1,8 +1,8 @@
 
 from distutils.core import setup
 setup(
-  name = 'TOPSIS-Tanisha-101803042',         
-  packages = ['TOPSIS-Tanisha-101803042'],   
+  name = 'topsis_tanisha_101803042',         
+  packages = ['topsis_tanisha_101803042'],   
   version = '1.1',      
   license='MIT',        
   description = 'Topsis Score and Rank generator',   
@@ -10,8 +10,8 @@ setup(
   long_description_content_type='text/markdown',
   author = 'Tanisha Garg',                   
   author_email = 'tgarg_be18@thapar.edu',      
-  url = 'https://github.com/Tanisha1508/TOPSIS-Tanisha-101803042',   
-  download_url = 'https://github.com/Tanisha1508/TOPSIS-Tanisha-101803042/archive/v1.1.tar.gz',    
+  url = 'https://github.com/Tanisha1508/topsis_tanisha_101803042',   
+  download_url = 'https://github.com/Tanisha1508/topsis_tanisha_101803042/archive/v1.1.tar.gz',    
   keywords = ['topsis', 'topsis score', 'rank','Thapar'],   
   install_requires=['numpy','pandas' ],
   classifiers=[

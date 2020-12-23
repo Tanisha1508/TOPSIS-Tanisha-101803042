@@ -1,4 +1,4 @@
 [MASTER]
-init-hook='import sys; sys.path.append("C:\\Users\\Admin\\Documents\\TOPSIS-Tanisha-101803042\\TOPSIS-Tanisha-101803042")'
+init-hook='import sys; sys.path.append("C:\\Users\\Admin\\Documents\\topsis_tanisha_101803042\\topsis_tanisha_101803042")'
 [MESSAGES CONTROL]
 disable=W,C,R
