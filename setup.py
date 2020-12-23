@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'TOPSIS-Tanisha-101803042',         
   packages = ['TOPSIS-Tanisha-101803042'],   
-  version = '1.0',      
+  version = '1.1',      
   license='MIT',        
   description = 'Topsis Score and Rank generator',   
   long_description=open("README.md").read(),
