@@ -1,5 +1,5 @@
 
-from distutils.core import setup
+from setuptools import setup
 setup(
   name = 'topsis_tanisha_101803042',         
   packages = ['topsis_tanisha_101803042'],   
