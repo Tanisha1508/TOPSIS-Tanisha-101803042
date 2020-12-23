@@ -11,7 +11,7 @@ setup(
   author = 'Tanisha Garg',                   
   author_email = 'tgarg_be18@thapar.edu',      
   url = 'https://github.com/Tanisha1508/TOPSIS-Tanisha-101803042',   
-  download_url = 'https://github.com/Tanisha1508/TOPSIS-Tanisha-101803042/archive/1.0.tar.gz',    
+  download_url = 'https://github.com/Tanisha1508/TOPSIS-Tanisha-101803042/archive/v1.1.tar.gz',    
   keywords = ['topsis', 'topsis score', 'rank','Thapar'],   
   install_requires=['numpy','pandas' ],
   classifiers=[
