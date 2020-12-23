@@ -6,7 +6,7 @@ setup(
   version = '1.0',      
   license='MIT',        
   description = 'Topsis Score and Rank generator',   
-  long_description=open("README.txt").read(),
+  long_description=open("README.md").read(),
   long_description_content_type='text/markdown',
   author = 'Tanisha Garg',                   
   author_email = 'tgarg_be18@thapar.edu',      
