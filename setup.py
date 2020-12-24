@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
   name = 'topsis_tanisha_101803042',         
   packages = ['topsis_tanisha_101803042'],   
-  version = '1.1',      
+  version = '1.1.0',      
   license='MIT',        
   description = 'Topsis Score and Rank generator',   
   long_description=open("README.md").read(),
@@ -11,7 +11,7 @@ setup(
   author = 'Tanisha Garg',                   
   author_email = 'tgarg_be18@thapar.edu',      
   url = 'https://github.com/Tanisha1508/topsis_tanisha_101803042',   
-  download_url = 'https://github.com/Tanisha1508/topsis_tanisha_101803042/archive/v1.1.tar.gz',    
+  download_url = 'https://github.com/Tanisha1508/topsis_tanisha_101803042/archive/v1.1.0.tar.gz',    
   keywords = ['topsis', 'topsis score', 'rank','Thapar'],   
   install_requires=['numpy','pandas' ],
   classifiers=[
